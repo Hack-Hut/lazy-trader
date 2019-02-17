@@ -1,0 +1,908 @@
+Plus-Ticker,Name,API
+CGC,Canopy Growth,IEX
+ACB,Aurora Cannabis,IEX
+NWL,Newell Brands,IEX
+NVDA,NVIDIA,IEX
+AMZN,Amazon,IEX
+NGD,New Gold,IEX
+XPO,XPO Logistics,IEX
+FB,Facebook,IEX
+APHA,Aphria,IEX
+ANET,Arista Networks,IEX
+TLRY,Tilray,IEX
+INSY,Insys Therapeutics,IEX
+SPWR,SunPower,IEX
+NFLX,Netflix,IEX
+EA,Electronic Arts,IEX
+AAPL,Apple,IEX
+GWPH,GW Pharmaceuticals,IEX
+TSLA,Tesla,IEX
+GOOS,Canada Goose Holdings,IEX
+PEP,PepsiCo,IEX
+BA,Boeing,IEX
+AMD,AMD,IEX
+SPXC,SPX,IEX
+DAN,Dana Holding,IEX
+CTL,CenturyLink,IEX
+ATVI,Activision,IEX
+FTR,Frontier,IEX
+BABA,Alibaba,IEX
+NKE,Nike,IEX
+GOOG,Alphabet,IEX
+SBUX,Starbucks,IEX
+NIO,Nio,IEX
+SHOP,Shopify,IEX
+MAT,Mattel,IEX
+YNDX,Yandex,IEX
+JPM,JPMorgan,IEX
+V,Visa,IEX
+MSFT,Microsoft,IEX
+FDX,FedEx,IEX
+TWTR,Twitter,IEX
+PYPL,PayPal,IEX
+SQ,Square,IEX
+SSNC,SS&C,IEX
+TAP,Molson Coors Brewing,IEX
+TTWO,Take-Two Interactive Software,IEX
+DIS,Walt Disney,IEX
+OKE,ONEOK,IEX
+BB,BlackBerry,IEX
+MU,Micron,IEX
+XOM,ExxonMobil,IEX
+DBX,Dropbox,IEX
+SPOT,Spotify,IEX
+CHK,Chesapeake Energy,IEX
+TMUS,T-Mobile,IEX
+MCD,McDonald's,IEX
+BRK.B,Berkshire Hathaway,IEX
+DWDP,DowDuPont,IEX
+GPRO,GoPro,IEX
+ADP,ADP,IEX
+CRR,Carbo,IEX
+JEC,Jacobs Engineering,IEX
+GPN,Global Payments,IEX
+MA,MasterCard,IEX
+ESV,ENSCO,IEX
+MRO,Marathon Oil,IEX
+SNAP,Snap,IEX
+GE,General Electric,IEX
+VZ,Verizon,IEX
+APC,Anadarko Petroleum,IEX
+MRK,Merck,IEX
+PRU,Prudential Financial,IEX
+BHC,Bausch Health,IEX
+WU,Western Union,IEX
+AGNC,American Capital Agency,IEX
+NTRS,Northern Trust,IEX
+AEE,Ameren,IEX
+CGNX,Cognex,IEX
+AEO,American Eagle Outfitters,IEX
+ANF,Abercrombie & Fitch,IEX
+PBR,Petrobras,IEX
+F,Ford,IEX
+IRBT,iRobot,IEX
+FOSL,Fossil,IEX
+BBBY,BBBY,IEX
+TSM,Taiwan Semi.,IEX
+WMT,Walmart,IEX
+CVX,Chevron,IEX
+LNG,Cheniere Energy,IEX
+ANTM,Anthem,IEX
+DATA,Tableau Software,IEX
+CMCSA,Comcast,IEX
+IFF,Flavors & Fragrances,IEX
+TRQ,Turquoise Hill Resources,IEX
+CVS,CVS Health,IEX
+DOV,Dover,IEX
+CLX,Clorox,IEX
+CNC,Centene,IEX
+COG,Cabot Oil & Gas,IEX
+AMAT,Applied Mat.,IEX
+ALXN,Alexion,IEX
+BEN,Franklin,IEX
+CPRI,Capri Holdings,IEX
+BIDU,Baidu,IEX
+SLB,Schlumberger,IEX
+LLY,Eli Lilly,IEX
+EXAS,EXACT Sciences,IEX
+ADI,Analog Devices,IEX
+INTU,Intuit,IEX
+HSIC,Henry Schein,IEX
+LYV,Live Nation,IEX
+CY,Cypress Semiconductor,IEX
+RHT,Red Hat,IEX
+CAR,Avis Budget,IEX
+ENS,Enersys,IEX
+DLTR,Dollar Tree,IEX
+CBS,CBS,IEX
+IQV,IQVIA Holdings,IEX
+MCHP,Microchip,IEX
+INTC,Intel,IEX
+LOW,Lowe's,IEX
+UNH,UnitedHealth,IEX
+MCO,Moody's,IEX
+X,United States Steel,IEX
+AR,Antero Resources,IEX
+CHFC,Chemical Financial,IEX
+SNE,Sony,IEX
+NDAQ,NASDAQ,IEX
+SKX,Skechers,IEX
+HRB,H&R Block,IEX
+ABBV,AbbVie,IEX
+LULU,Lululemon Athletica,IEX
+JNJ,J & J,IEX
+AEP,AEP,IEX
+TWLO,Twilio,IEX
+EHC,Encompass Health,IEX
+WFT,Weatherford,IEX
+GILD,Gilead,IEX
+STNE,StoneCo,IEX
+NBR,Nabors Industries,IEX
+KHC,Kraft Heinz,IEX
+RRC,Range Resources,IEX
+HAS,Hasbro,IEX
+TME,Tencent Music Entertainment,IEX
+M,Macy's,IEX
+ORCL,Oracle,IEX
+ACIW,ACI Worldwide,IEX
+ISRG,Intuitive Surgical,IEX
+MDT,Medtronic,IEX
+SPN,Superior Energy Services,IEX
+LMT,Lockheed Martin,IEX
+RTN,Raytheon,IEX
+SIX,Six Flags,IEX
+YELP,Yelp,IEX
+DE,Deere,IEX
+NTAP,NetApp,IEX
+ECA,EnCana,IEX
+BKD,Brookdale Senior Living,IEX
+KGC,Kinross Gold,IEX
+AIG,AIG,IEX
+ACGL,Arch Capital,IEX
+ZBRA,Zebra,IEX
+WFC,Wells Fargo,IEX
+EL,Estee Lauder,IEX
+KEY,KeyCorp,IEX
+IQ,iQIYI,IEX
+LRCX,Lam Research,IEX
+EQIX,Equinix,IEX
+MTCH,Match Group,IEX
+GRUB,GrubHub,IEX
+SEE,Sealed Air,IEX
+ET,Energy Transfer,IEX
+TM,Toyota,IEX
+BLMN,Bloomin' Brands,IEX
+TUP,Tupperware,IEX
+BG,Bunge,IEX
+CIEN,CIENA,IEX
+LPI,Laredo Petroleum,IEX
+EBAY,eBay,IEX
+FSLR,First Solar,IEX
+CMI,Cummins,IEX
+SON,Sonoco,IEX
+SYK,Stryker,IEX
+BMY,Bristol Myers,IEX
+C,Citi Group,IEX
+BLK,BlackRock,IEX
+PCG,PG&E,IEX
+COF,Capital One,IEX
+CRM,salesforce.com,IEX
+CPB,Campbell Soup,IEX
+CSCO,Cisco,IEX
+BAC,Bank Of America,IEX
+VMC,Vulcan Materials,IEX
+GRPN,Groupon,IEX
+JD,JD.Com,IEX
+MGM,MGM,IEX
+CFX,Colfax,IEX
+TEVA,Teva,IEX
+ADBE,Adobe,IEX
+SPLK,Splunk,IEX
+ENDP,Endo,IEX
+PXD,Pioneer Natural Resources,IEX
+AWK,American Water Works,IEX
+HON,Honeywell,IEX
+GM,General Motors,IEX
+TRIP,TripAdvisor,IEX
+BSX,Boston Scientific,IEX
+DVA,Davita Healthcare Partners,IEX
+INVA,Innoviva,IEX
+LPX,Louisiana-Pacific,IEX
+FLIR,FLIR,IEX
+YUM,Yum!,IEX
+JCOM,J2 Global,IEX
+DISH,DISH Network,IEX
+GT,Goodyear,IEX
+GME,GameStop,IEX
+MO,Altria,IEX
+CNO,CNO Financial Group,IEX
+JLL,Jones Lang Lasalle,IEX
+HLT,Hilton,IEX
+R,Ryder,IEX
+QCOM,Qualcomm,IEX
+SYY,SYSCO,IEX
+MMM,3M,IEX
+CHD,Church & Dwight,IEX
+ODP,Office Depot,IEX
+AER,Aercap,IEX
+BWA,Borgwarner,IEX
+CME,CME,IEX
+FIZZ,National Beverage,IEX
+PFE,Pfizer,IEX
+UAA,Under Armour,IEX
+COTY,Coty,IEX
+WB,Weibo,IEX
+SBNY,Signature Bank,IEX
+OAS,Oasis Petroleum,IEX
+APH,Amphenol,IEX
+TCO,Taubman,IEX
+FTI,TechnipFMC,IEX
+ARE,Alexandria,IEX
+TEX,Terex,IEX
+CNX,CNX Resources ,IEX
+AVB,Avalonbay Communities,IEX
+AVGO,Broadcom,IEX
+AVY,Avery Dennison,IEX
+THO,Thor Industries,IEX
+CBRE,CBRE,IEX
+AZO,AutoZone,IEX
+AXP,AMEX,IEX
+TROW,T. Rowe Price,IEX
+AKAM,Akamai,IEX
+AES,The AES,IEX
+AFL,AFLAC Inc,IEX
+AGN,Allergan,IEX
+AJG,Arthur J. Gallagher,IEX
+AIV,Aimco,IEX
+ALB,Albemarle,IEX
+ALGN,Align Technology,IEX
+LB,Brands,IEX
+SRCL,Stericycle,IEX
+BURL,Burlington,IEX
+CHGG,Chegg,IEX
+SPB,Spectrum Brands,IEX
+AME,Ametek,IEX
+ALL,The Allstate,IEX
+ALK,Alaska Air,IEX
+AMGN,Amgen,IEX
+ITUB,Itau Unibanco,IEX
+CREE,Cree,IEX
+MHK,Mohawk Industries,IEX
+NXPI,NXP Semiconductors,IEX
+AMP,Ameriprise Financial,IEX
+AMT,American Tower,IEX
+APD,APD,IEX
+APA,Apache,IEX
+ABX,Barrick Gold,IEX
+BKNG,Booking Holdings,IEX
+QGEN,Qiagen,IEX
+A,Agilent Technologies,IEX
+DELL,Dell Technologies,IEX
+L,Loews,IEX
+T,AT&T,IEX
+AGCO,Agco,IEX
+ABT,Abbott,IEX
+ADM,Archer Daniels,IEX
+ABC,AmerisourceBergen,IEX
+MNST,Monster Beverage,IEX
+PGR,The Progressive,IEX
+DOCU,DocuSign,IEX
+OHI,Omega Healthcare,IEX
+GG,Goldcorp,IEX
+VALE,Vale,IEX
+COST,Costco,IEX
+BIIB,Biogen Idec,IEX
+AUY,Yamana Gold,IEX
+FLR,Fluor,IEX
+TGT,Target,IEX
+BDX,BDX,IEX
+HPQ,HP,IEX
+NEM,Newmont Mine.,IEX
+EGO,Eldorado Gold,IEX
+JAZZ,Jazz Pharmaceuticals,IEX
+MD,Mednax,IEX
+SPGI,S&P Global,IEX
+PAAS,Pan American Silver,IEX
+TJX,The TJX Companies,IEX
+EXP,Eagle Materials,IEX
+MAS,Masco,IEX
+CLDR,Cloudera,IEX
+UTX,United Technologies,IEX
+H,Hyatt,IEX
+HIMX,Himax Technologies,IEX
+CRUS,Cirrus Logic,IEX
+CAT,Caterpillar,IEX
+KNX,Knight Transportation,IEX
+XRX,Xerox,IEX
+MMP,Magellan,IEX
+TPR,TAPESTRY,IEX
+ETN,Eaton,IEX
+IRM,Iron Mountain,IEX
+MKC,McCormick,IEX
+CBL,CBL & Associates,IEX
+IEX,IDEX Corporation,IEX
+SO,Southern Company,IEX
+DAL,Delta Air Lines,IEX
+NRG,NRG Energy,IEX
+KMT,Kennametal,IEX
+GS,Goldman Sachs,IEX
+SCHW,Charles Schwab,IEX
+NOW,ServiceNow,IEX
+SAVE,Spirit Airlines,IEX
+FIS,Fidelity,IEX
+GDDY,GoDaddy,IEX
+HUM,Humana,IEX
+NOV,National-Oilwell,IEX
+XLNX,Xilinx,IEX
+PANW,Palo Alto Networks,IEX
+FMC,FMC,IEX
+FTNT,Fortinet,IEX
+HRL,Hormel Foods,IEX
+MCK,McKesson,IEX
+NI,NiSource,IEX
+LH,LabCorp,IEX
+BR,Broadridge,IEX
+CAG,ConAgra Foods,IEX
+WETF,WisdomTree Investments,IEX
+HAL,Halliburton,IEX
+NFG,National Fuel Gas,IEX
+CCI,Crown Castle International,IEX
+MMC,MMC,IEX
+HTZ,Hertz,IEX
+ATI,Allegheny Technologies,IEX
+QSR,Restaurant Brands,IEX
+CMG,Chipotle,IEX
+WEC,Wisconsin Energy,IEX
+ALNY,Alnylam,IEX
+BAM,Brookfield,IEX
+UBNT,Ubiquiti,IEX
+CARA,Cara Therapeutics,IEX
+BRFS,BRF S.A.,IEX
+TD,TD Bank,IEX
+RE,Everest Re,IEX
+ROST,Ross Stores,IEX
+SIVB,SVB Financial,IEX
+KMX,CarMax,IEX
+CHL,China Mobile,IEX
+TDG,Transdigm,IEX
+ASNA,Ascena Retail,IEX
+PH,Parker,IEX
+PM,Philip Morris,IEX
+PVH,PVH,IEX
+SGEN,Seattle Genetics,IEX
+MSI,Motorola,IEX
+IBM,IBM,IEX
+MS,Morgan Stanley,IEX
+IT,Gartner,IEX
+RCL,RC Cruises,IEX
+RHI,Robert Half,IEX
+VER,Vereit,IEX
+WM,Waste Management,IEX
+SINA,Sina,IEX
+HES,Hess,IEX
+SRE,Sempra Energy,IEX
+STI,SunTrust Banks,IEX
+CTAS,Cintas,IEX
+TXN,Texas Inst.,IEX
+TXT,Textron,IEX
+WLTW,Willis Towers Watson,IEX
+WAT,Waters,IEX
+WHR,Whirlpool,IEX
+VTR,Ventas,IEX
+URI,United Rentals,IEX
+UNP,UNP,IEX
+VLO,Valero Energy,IEX
+WMB,Williams Companies,IEX
+STT,State Street,IEX
+ACAD,ACADIA Pharmaceuticals,IEX
+EAT,Brinker,IEX
+ILMN,Illumina,IEX
+STZ,Constellation Brands,IEX
+FCAU,Fiat,IEX
+ADSK,Autodesk,IEX
+COLM,Columbia Sportswear,IEX
+ANSS,ANSYS,IEX
+BAX,Baxter,IEX
+ATR,Aptargroup,IEX
+BIO,Bio-Rad,IEX
+CCJ,Cameco,IEX
+DXC,DXC Technology,IEX
+EXR,Extra Space Storage,IEX
+HBI,Hanesbrands,IEX
+EXPE,Expedia,IEX
+GIS,General Mills,IEX
+AOS,Smith [A.O.],IEX
+K,Kellogg,IEX
+DLPH,Delphi Technologies,IEX
+VSAT,ViaSat,IEX
+AZPN,AspenTech,IEX
+COO,Cooper,IEX
+BX,The Blackstone,IEX
+NWSA,News Corp,IEX
+SWKS,Skyworks Solutions,IEX
+EXC,Exelon,IEX
+PSX,Phillips 66,IEX
+CNQ,Canadian Natural Resource,IEX
+RSG,Republic Services,IEX
+FISV,Fiserv,IEX
+IAC,InterActive,IEX
+UAL,United Continental,IEX
+UHS,Universal Health Services,IEX
+WDC,Western Digital,IEX
+CPT,Camden,IEX
+RLGY,Realogy,IEX
+RS,Reliance Steel & Aluminum,IEX
+MPC,Marathon Petroleum,IEX
+FEYE,FireEye,IEX
+RJF,Raymond James,IEX
+GIB,CGI,IEX
+ATO,Atmos Energy,IEX
+RY,RBC,IEX
+DUK,Duke Energy,IEX
+LC,Lending Club,IEX
+CBSH,Commerce Bancshares,IEX
+RAD,Rite Aid,IEX
+BPL,Buckeye Partners,IEX
+ENR,Energizer,IEX
+REGN,Regeneron,IEX
+BLKB,Blackbaud,IEX
+SNV,Synovus Financial,IEX
+PBI,Pitney Bowes,IEX
+SYMC,Symantec,IEX
+D,Dominion,IEX
+NLSN,Nielsen Holdings,IEX
+CDW,CDW,IEX
+DRQ,Dril-Quip,IEX
+CM,Canadian Imperial,IEX
+BBT,BB&T,IEX
+CXO,Concho,IEX
+XEL,Xcel Energy,IEX
+RES,RPC,IEX
+KR,The Kroger Co.,IEX
+KMB,Kimberly Clark,IEX
+LKQ,LKQ,IEX
+LEG,Leggett & Platt,IEX
+KLAC,KLA-Tencor,IEX
+IP,International Paper,IEX
+INCY,Incyte,IEX
+JNPR,Juniper Networks,IEX
+CAH,Cardinal Health,IEX
+NLY,Annaly Capital M.,IEX
+DHR,Danaher,IEX
+SNA,Snap-On,IEX
+HAIN,The Hain Celestial,IEX
+ICE,ICE,IEX
+RDN,Radian Group,IEX
+PPL,PPL,IEX
+PNR,Pentair,IEX
+PPG,PPG Industries,IEX
+PNC,PNC Financial,IEX
+QRVO,Qorvo,IEX
+PWR,Quanta Services,IEX
+ROP,Roper Industries,IEX
+ROK,Rockwell Automation,IEX
+REG,Regency Centers,IEX
+PKG,Packaging,IEX
+PG,P&G,IEX
+PFG,Principal Financial,IEX
+XRAY,DENTSPLY Sirona,IEX
+WYNN,Wynn Resorts,IEX
+USB,US Bancorp,IEX
+VFC,V.F.,IEX
+VRSN,VeriSign,IEX
+VNO,Vornado Realty Trust,IEX
+WBA,Walgreens,IEX
+VRTX,Vertex,IEX
+UNM,Unum,IEX
+MAR,Marriott International,IEX
+GPOR,Gulfport,IEX
+STX,Seagate,IEX
+SPG,Simon Property,IEX
+SWK,Stanley Black & Decker,IEX
+SHW,Sherwin-Williams,IEX
+SJM,J.M. Smucker,IEX
+SLG,SL Green Realty,IEX
+TMO,TMO,IEX
+TMK,Torchmark,IEX
+TSCO,Tractor Supply,IEX
+MAC,Macerich,IEX
+ODFL,Old Dominion,IEX
+ALSN,Allison Transmission,IEX
+AON,Aon,IEX
+IGT,International Game Technology,IEX
+ARW,Arrow,IEX
+CAJ,Canon,IEX
+UGI,Ugi,IEX
+JKHY,Jack Henry & Associates,IEX
+ACN,Accenture,IEX
+CB,Chubb,IEX
+TEAM,Atlassian,IEX
+LBTYA,Liberty Global,IEX
+CENX,Century Aluminum,IEX
+OMC,Omnicom,IEX
+CELG,Celgene,IEX
+WYND,Wyndham Destinations,IEX
+RGA,Reinsurance,IEX
+CPRT,Copart,IEX
+CDK,CDK,IEX
+ACC,American Campus,IEX
+LUV,Southwest Airlines,IEX
+FRT,Federal Realty,IEX
+GPS,Gap,IEX
+HCA,HCA Healthcare,IEX
+HFC,HollyFrontier,IEX
+DLR,Digital Realty,IEX
+DHI,D.R. Horton,IEX
+EFX,Equifax,IEX
+EMN,Eastman Chemical,IEX
+EOG,EOG,IEX
+CNP,CenterPoint Energy,IEX
+G,Genpact,IEX
+SKT,Tanger Outlet,IEX
+FE,FirstEnergy,IEX
+CTSH,Cognizant,IEX
+PLD,Prologis,IEX
+PHM,PulteGroup,IEX
+FOX,Twenty First Century,IEX
+SBAC,SBA Communications,IEX
+TIF,Tiffany,IEX
+TRV,The Travelers Companies,IEX
+PEG,Public Service,IEX
+PCAR,PACCAR,IEX
+OXY,Occidental,IEX
+PAYX,Paychex,IEX
+NBL,Noble Energy,IEX
+MXIM,Maxim,IEX
+NUE,Nucor,IEX
+KSS,Kohl's,IEX
+LEN,Lennar,IEX
+KMI,Kinder Morgan,IEX
+INFY,Infosys,IEX
+HBAN,HBAN,IEX
+EQT,Eqt,IEX
+ACM,Aecom,IEX
+FIT,Fitbit,IEX
+CHRW,C.H. Robinson,IEX
+BAP,Credicorp,IEX
+RL,Ralph Lauren,IEX
+UPS,UPS,IEX
+VIA.B,Viacom,IEX
+ULTI,Ultimate Software,IEX
+IVZ,Invesco,IEX
+RBC,REGAL,IEX
+COP,ConocoPhillips,IEX
+DFS,Discover Financial,IEX
+HUN,Huntsman,IEX
+TOL,Toll Brothers,IEX
+EMR,Emerson,IEX
+ALLE,Allegion,IEX
+CERN,Cerner,IEX
+CCL,Carnival,IEX
+AXS,Axis Capital,IEX
+MELI,MercadoLibre,IEX
+VEEV,Veeva Systems,IEX
+TEN,Tenneco Automotive,IEX
+UFS,Domtar,IEX
+NEE,NextEra Energy,IEX
+SMG,Scotts Miracle-Gro,IEX
+BHGE,Baker Hughes,IEX
+MKL,Markel,IEX
+LN,LINE,IEX
+VMW,VMware,IEX
+O,Realty Income,IEX
+LII,Lennox,IEX
+JCP,J.C. Penney,IEX
+INFO,IHS Markit,IEX
+GD,General Dynamics,IEX
+LAZ,Lazard,IEX
+ENB,Enbridge,IEX
+CSX,CSX,IEX
+HMC,Honda,IEX
+ON,ON Semiconductor,IEX
+CTXS,Citrix Systems,IEX
+BMO,BMO,IEX
+CMS,CMS Energy,IEX
+DG,Dollar General,IEX
+HCP,HCP,IEX
+ED,Consolidated Edison,IEX
+SM,Sm Energy,IEX
+IPGP,IPG Photonics,IEX
+AEIS,Advanced Energy,IEX
+BLL,Ball,IEX
+CI,CIGNA,IEX
+CDNS,Cadence Design Systems,IEX
+CF,CF Industries,IEX
+SLM,SLM,IEX
+PFPT,Proofpoint,IEX
+GPC,Genuine Parts,IEX
+CX,Cemex,IEX
+PTEN,Patterson-UTI Energy,IEX
+GIL,Gildan,IEX
+WPM,Wheaton Precious Metals,IEX
+GLW,Corning,IEX
+SF,Stifel,IEX
+RNR,RenaissanceRe,IEX
+ZBH,Zimmer Biomet,IEX
+KSU,Kansas City Southern,IEX
+JCI,Johnson Controls,IEX
+OTEX,Open Text,IEX
+SLGN,Silgan,IEX
+BID,Sotheby's,IEX
+CHTR,Charter Spectrum,IEX
+HRS,Harris,IEX
+ETFC,E TRADE,IEX
+IDXX,IDEXX Laboratories,IEX
+DOX,Amdocs,IEX
+TFX,Teleflex,IEX
+MYL,Mylan,IEX
+FLEX,Flex,IEX
+DISCA,Discovery,IEX
+CE,Celanese,IEX
+BK,BK,IEX
+FITB,Fifth Third Bancorp,IEX
+HPE,Hewlett Packard,IEX
+Z,Zillow,IEX
+UNFI,UNFI,IEX
+SCCO,S.Copper,IEX
+WEN,Wendy's Company,IEX
+BMS,Bemis,IEX
+DCP,Dcp Midstream,IEX
+DLB,Dolby,IEX
+MSG,The Garden,IEX
+MUR,Murphy Oil,IEX
+MDLZ,Mondelēz,IEX
+GPK,Graphic Packaging,IEX
+DRE,Duke Realty,IEX
+BC,Brunswick,IEX
+AMCX,AMC Networks,IEX
+FII,Federated Investors,IEX
+HOG,Harley-Davidson,IEX
+DEI,Douglas Emmett,IEX
+DDD,3D Systems,IEX
+LLL,L-3 Communications,IEX
+CHT,Chunghwa Tele.,IEX
+FCX,FCX,IEX
+RACE,Ferrari,IEX
+VMI,Valmont,IEX
+ECL,Ecolab,IEX
+MFA,MFA Financial,IEX
+IBN,ICICI Bank,IEX
+PBCT,People's United Financial,IEX
+BXP,Boston Properties,IEX
+DVN,Devon Energy,IEX
+OII,Oceaneering International,IEX
+COMM,Commscope,IEX
+JBHT,J.B. Hunt,IEX
+WP,Worldpay,IEX
+XYL,Xylem,IEX
+JBLU,JetBlue Airways,IEX
+SNY,Sanofi,IEX
+KIM,Kimco Realty,IEX
+SBH,Sally Beauty Holdings,IEX
+PTC,PTC,IEX
+NS,NuStar,IEX
+EPD,Enterprise Prod.,IEX
+MRVL,Marvell,IEX
+WAB,Wabtec,IEX
+GNC,GNC Holdings,IEX
+MSCI,Msci,IEX
+AABA,Altaba,IEX
+SFM,Sprouts,IEX
+NSC,NScorp,IEX
+EWBC,East West Bancorp,IEX
+CIM,Chimera Investment,IEX
+HPT,Hospitality,IEX
+TER,Teradyne,IEX
+PSEC,Prospect Capital,IEX
+WTR,Aqua America,IEX
+HXL,Hexcel,IEX
+AN,Autonation,IEX
+FNSR,Finisar,IEX
+LNT,Alliant Energy,IEX
+THC,Tenet Healthcare,IEX
+ARCC,Ares Capital,IEX
+WRB,W.R. Berkley,IEX
+WLL,Whiting Petroleum,IEX
+STLD,Steel Dynamics,IEX
+AMTD,TD Ameritrade,IEX
+ZION,Zions Ban,IEX
+LNC,Lincoln National,IEX
+ZTS,Zoetis,IEX
+DO,Diamond Offshore Drilling,IEX
+AA,Alcoa,IEX
+FL,Foot Locker,IEX
+EW,Edwards Lifesciences,IEX
+SQM,Sociedad Quimica,IEX
+MOS,Mosaic,IEX
+FAST,Fastenal,IEX
+WUBA,58.com,IEX
+MTB,M&T Bank,IEX
+BBY,Best Buy Co.,IEX
+FRC,First Republic Bank,IEX
+JWN,Nordstrom,IEX
+QEP,QEP Resources,IEX
+CMA,Comerica Inc,IEX
+ASH,Ashland,IEX
+UDR,UDR,IEX
+BMRN,BioMarin Pharmaceutical,IEX
+RPM,RPM,IEX
+HIG,HIG,IEX
+MLCO,Melco Resorts & Entertainment,IEX
+AMBA,Ambarella,IEX
+TEL,Te Connectivity,IEX
+CTRP,Ctrip,IEX
+EXPD,EXPD,IEX
+WEX,Wex,IEX
+NDSN,Nordson,IEX
+AYI,Acuity Brands,IEX
+NOC,Northrop Grumman,IEX
+HP,Helmerich & Payne,IEX
+BRO,Brown & Brown,IEX
+SNP,China Petro.,IEX
+MDU,Mdu Res,IEX
+HD,Home Depot,IEX
+MAN,Manpower,IEX
+AEM,Agnico-Eagle Mines,IEX
+KBR,KBR,IEX
+CHU,China Unicom,IEX
+BKU,BankUnited,IEX
+GLPI,Gaming and Leisure,IEX
+ORLY,O'Reilly,IEX
+AVT,Avnet,IEX
+DKS,Dick's Sporting Goods,IEX
+TECK,Teck,IEX
+CVE,Cenovus,IEX
+SWN,Southwestern Energy,IEX
+ARRS,Arris,IEX
+WPC,W.P. Carey,IEX
+ALKS,Alkermes,IEX
+TRP,TransCanada,IEX
+RGLD,Royal Gold,IEX
+ACIA,Acacia Communications,IEX
+TRI,T. Reuters,IEX
+MDRX,Allscripts Healthcare Solutions,IEX
+GLNG,Golar,IEX
+JBL,Jabil Circuit,IEX
+GNTX,Gentex,IEX
+URBN,Urban Outfitters,IEX
+CR,Crane,IEX
+NCR,NCR,IEX
+BRKR,Bruker,IEX
+TS,Tenaris,IEX
+OSK,Oshkosh Truck,IEX
+VC,Visteon,IEX
+LEA,Lear,IEX
+FLO,Flowers Foods,IEX
+ULTA,Cosmetics Fragrance,IEX
+CLH,Clean Harbors,IEX
+DDS,Dillard's,IEX
+DCI,Donaldson,IEX
+LYB,LyondellBasell Industries,IEX
+NYCB,NY Bancorp,IEX
+OI,Owens-Illinois,IEX
+FDS,Factset Research,IEX
+CRI,Carter's,IEX
+SITC,SITE,IEX
+DNKN,Dunkin Brands,IEX
+HLF,Herbalife Nutrition,IEX
+BNS,BNS,IEX
+TSN,Tyson Foods,IEX
+HII,Huntington Ingalls,IEX
+RCI,Rogers Communications,IEX
+TSS,TSYS,IEX
+EIX,Edison International,IEX
+LVS,Las Vegas Sands,IEX
+BCE,BCE,IEX
+TRN,Trinity Industries,IEX
+CPA,Copa Holdings,IEX
+BECN,Beacon Roofing Supply,IEX
+WELL,Welltower,IEX
+NUAN,Nuance,IEX
+SU,Suncor Energy,IEX
+WSM,Williams-Sonoma,IEX
+FBHS,Fortune Brands,IEX
+CLB,Core Laboratories,IEX
+FFIV,F5 Networks,IEX
+MLM,Martin Marietta Materials,IEX
+POOL,Pool Corporation,IEX
+DTE,DTE Energy,IEX
+FLS,Flowserve,IEX
+MGA,Magna International,IEX
+AMH,American Homes 4 Rent,IEX
+GRA,W.R. Grace,IEX
+CXW,Corrections,IEX
+MIC,Macquarie Infrastructure,IEX
+IEP,Icahn Enterprises,IEX
+MET,MetLife,IEX
+HST,Host Hotels,IEX
+WLK,Westlake Chemical,IEX
+IR,Ingersoll-Rand,IEX
+GNW,Genworth Financial,IEX
+RYN,Rayonier,IEX
+S,Sprint,IEX
+INT,World Fuel,IEX
+MEOH,Methanex,IEX
+CXP,Columbia,IEX
+IPG,IPG - interpublic,IEX
+ESL,Esterline,IEX
+ITW,Illinois TW,IEX
+CFR,Frost,IEX
+PII,Polaris Industries,IEX
+CINF,Cincinnati Financial,IEX
+JEF,Jefferies Financial,IEX
+IDTI,IDT,IEX
+EQR,Equity Residential,IEX
+ORI,Old Republic,IEX
+WBS,Webster Financial,IEX
+MSM,MSC,IEX
+CCK,Crown Cork & Seal,IEX
+NEU,Newmarket,IEX
+TWO,Two Harbors Investment,IEX
+KRC,Kilroy Realty,IEX
+KAR,Kar Auction Services,IEX
+IMO,Imperial Oil,IEX
+VRSK,Verisk Analytics,IEX
+GWR,Genesee & Wyoming,IEX
+NYSE:RF,Regions Financial,IEX
+WY,Weyerhaeuser,IEX
+PKI,PerkinElmer,IEX
+VAR,Varian Medical,IEX
+BOKF,BOK Financial,IEX
+KEX,Kirby,IEX
+WBC,Wabco,IEX
+TRMB,Trimble Navigation,IEX
+POL,PolyOne,IEX
+UMPQ,Umpqua,IEX
+SLF,Sun Life Financial,IEX
+AIZ,Assurant,IEX
+SHO,Sunstone Hotel Investors,IEX
+SNH,Senior Housing Properties Trust,IEX
+TTC,Toro,IEX
+CNI,Canadian National Railway,IEX
+LM,Legg Mason,IEX
+MIDD,Middleby,IEX
+MFC,Manulife,IEX
+VEON,VEON,IEX
+JHG,Janus Henderson,IEX
+CNK,Cinemark,IEX
+INGR,Ingredion,IEX
+OC,Owens Corning,IEX
+AXE,Anixter,IEX
+ESS,Essex Property Trust,IEX
+SEIC,SEI Investments,IEX
+MTG,MGIC Investment,IEX
+BPOP,Popular,IEX
+CIT,CIT Group,IEX
+WRI,Weingarten Realty,IEX
+USG,USG,IEX
+RLJ,RLJ Lodging,IEX
+LXP,Lexington Realty Trust,IEX
+TDY,Teledyne Technologies,IEX
+TRGP,Targa,IEX
+LPLA,LPL Financial,IEX
+HWC,Hancock Whitney,IEX
+LECO,Lincoln Electric,IEX
+WCC,Wesco,IEX
+CVLT,CommVault Systems,IEX
+ITT,ITT,IEX
+FNF,Fidelity National Financial,IEX
+MAA,MAA,IEX
+PGRE,Paramount Group,IEX
+SPR,Spirit Aerosystems,IEX
+HOLX,Hologic,IEX
+HHC,Howard Hughes,IEX
+LAMR,Lamar Advertising,IEX
+LPT,Liberty Property,IEX
+MTD,Mettler-Toledo,IEX
+FHN,First Horizon National,IEX
+AGO,Assured Guaranty,IEX
+OGE,Oge Energy,IEX
+GGG,Graco,IEX
+CWB,CWB,IEX
+TU,TELUS,IEX
+PB,Prosperity Bancshares,IEX
+EGP,EastGroup Properties,IEX
+TSG,The Stars Group,IEX
+APLE,Apple Hospitality REIT,IEX
+PVTL,Pivotal Software,IEX
+FOXF,Fox Factory Holding,IEX

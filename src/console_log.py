@@ -9,6 +9,7 @@ class ConsoleLog:
 		self.banner()
 
 	def append(self, text, color="success"):
+		print("text")
 		col = self.color_picker(color)
 		msg = "<span style=\" font-size:9pt; font-weight:400; color:" + col
 		msg += text
@@ -16,7 +17,6 @@ class ConsoleLog:
 		self.txt_browser.append(msg)
 
 	def color_picker(self, color):
-
 		if color  == "debug":
 			return self.DEBUG + ";\" > [ ]\t\t---" 
 		if color  == "error":

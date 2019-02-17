@@ -1,11 +1,14 @@
-# -*- coding: utf-8 -*-
+#
+# INIT GUI
+#
 
-# Form implementation generated from reading ui file 'untitled.ui'
-#
-# Created by: PyQt5 UI code generator 5.11.3
-#
-# WARNING! All changes made in this file will be lost!
+#from download_data import DownloadData
+from console_log import ConsoleLog
+from download_data import FetchData
+from all import All
+
 import qdarkgraystyle
+from functools import partial
 from PyQt5 import QtGui, QtCore
 from PyQt5.QtWidgets import QTableWidget,QMessageBox, QPushButton, QMainWindow, QWidget, QApplication, QVBoxLayout, QTableWidgetItem, QAction
 from PyQt5.QtGui import QIcon
@@ -14,10 +17,36 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_LazyTrader(QtWidgets.QMainWindow):
     def setupUi(self, LazyTrader):
-
+        print("Setting up graphical user interface")
+        # Setup GUI
         LazyTrader.setObjectName("LazyTrader")
         LazyTrader.resize(1574, 988)
+        self.central_page(LazyTrader)
+        self.action_page(LazyTrader)
+        self.sugested_trade_page(LazyTrader)
+        self.open_trades_page(LazyTrader)
+        self.closed_trade_page(LazyTrader)
+        self.all_trade_page(LazyTrader)
+        self.top_right_widget(LazyTrader)
+        self.price_graph_page(LazyTrader)
+        self.portfolio_page(LazyTrader)
+        self.notes_page(LazyTrader)
+        self.backtest_page(LazyTrader)
+        self.bottom_bar(LazyTrader)
+        self.console_page(LazyTrader)
+        self.manual_trade_page(LazyTrader)
+        self.auto_trade_page(LazyTrader)
+        self.http_codes_page(LazyTrader)
+        self.shortcut_page(LazyTrader)
+        self.menu_setup(LazyTrader)
+        self.inti_tab(LazyTrader)
+        self.retranslateUi(LazyTrader)
+        self.load_classes(LazyTrader)
+        self.load_all_table(LazyTrader)
 
+
+    def central_page(self, LazyTrader):
+        """This is the core layout of the GUI widget, grids and tabs"""
         self.centralwidget = QtWidgets.QWidget(LazyTrader)
         self.centralwidget.setObjectName("centralwidget")
 
@@ -54,6 +83,8 @@ class Ui_LazyTrader(QtWidgets.QMainWindow):
         self.gridLayout_17 = QtWidgets.QGridLayout()
         self.gridLayout_17.setObjectName("gridLayout_17")
 
+    def action_page(self, LazyTrader):
+        """top left first tab"""
         self.btn_update_stop_action = QtWidgets.QPushButton(self.gridLayoutWidget_16)
         self.btn_update_stop_action.setObjectName("btn_update_stop_action")
         
@@ -266,7 +297,9 @@ class Ui_LazyTrader(QtWidgets.QMainWindow):
         self.btn_opn_sug.setObjectName("btn_opn_sug")
         
         self.gridLayout_21.addWidget(self.btn_opn_sug, 3, 1, 1, 1)
-        
+
+    def sugested_trade_page(self, LazyTrader):
+        """Top left contains list of sugested trades"""
         self.spin_entry_sug = QtWidgets.QDoubleSpinBox(self.gridLayoutWidget_19)
         self.spin_entry_sug.setObjectName("spin_entry_sug")
         
@@ -306,7 +339,9 @@ class Ui_LazyTrader(QtWidgets.QMainWindow):
         self.picture_sug.setObjectName("picture_sug")
         
         self.tabWidget.addTab(self.tab_sugested_pos, "")
-        
+
+    def open_trades_page(self, LazyTrader):
+        """Top left contains all the open posistions"""
         self.tab_open_pos = QtWidgets.QWidget()
         self.tab_open_pos.setObjectName("tab_open_pos")
         
@@ -365,7 +400,9 @@ class Ui_LazyTrader(QtWidgets.QMainWindow):
         self.gridLayout_19.addWidget(self.btn_view_chart_open, 0, 1, 1, 1)
         
         self.tabWidget.addTab(self.tab_open_pos, "")
-        
+
+    def closed_trade_page(self, LazyTrader):
+        """Top left page that contains all the previously open positions"""
         self.tab_closed_pos = QtWidgets.QWidget()
         self.tab_closed_pos.setObjectName("tab_closed_pos")
         
@@ -404,52 +441,9 @@ class Ui_LazyTrader(QtWidgets.QMainWindow):
         self.gridLayout_18.addWidget(self.btn_sort_closed, 2, 0, 1, 1)
         
         self.tabWidget.addTab(self.tab_closed_pos, "")
-        
-        self.tab_all_pos = QtWidgets.QWidget()
-        self.tab_all_pos.setObjectName("tab_all_pos")
-        
-        self.tableWidget_7 = QtWidgets.QTableWidget(self.tab_all_pos)
-        self.tableWidget_7.setGeometry(QtCore.QRect(10, 10, 471, 751))
-        self.tableWidget_7.setObjectName("tableWidget_7")
-        self.tableWidget_7.setColumnCount(0)
-        self.tableWidget_7.setRowCount(0)
-        
-        self.frame_3 = QtWidgets.QFrame(self.tab_all_pos)
-        self.frame_3.setGeometry(QtCore.QRect(10, 770, 471, 81))
-        self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_3.setObjectName("frame_3")
-        
-        self.gridLayoutWidget_7 = QtWidgets.QWidget(self.frame_3)
-        self.gridLayoutWidget_7.setGeometry(QtCore.QRect(10, 10, 451, 61))
-        self.gridLayoutWidget_7.setObjectName("gridLayoutWidget_7")
-        
-        self.gridLayout_2 = QtWidgets.QGridLayout(self.gridLayoutWidget_7)
-        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.gridLayout_2.setObjectName("gridLayout_2")
-        
-        self.btn_search_name_all = QtWidgets.QPushButton(self.gridLayoutWidget_7)
-        self.btn_search_name_all.setObjectName("btn_search_name_all")
-        
-        self.gridLayout_2.addWidget(self.btn_search_name_all, 1, 1, 1, 1)
-        
-        self.txt_search_all = QtWidgets.QLineEdit(self.gridLayoutWidget_7)
-        self.txt_search_all.setObjectName("txt_search_all")
-        
-        self.gridLayout_2.addWidget(self.txt_search_all, 1, 0, 1, 1)
-        
-        self.combo_search_all = QtWidgets.QComboBox(self.gridLayoutWidget_7)
-        self.combo_search_all.setObjectName("combo_search_all")
-        
-        self.gridLayout_2.addWidget(self.combo_search_all, 2, 0, 1, 1)
-        
-        self.btn_search_type_all = QtWidgets.QPushButton(self.gridLayoutWidget_7)
-        self.btn_search_type_all.setObjectName("btn_search_type_all")
-        
-        self.gridLayout_2.addWidget(self.btn_search_type_all, 2, 1, 1, 1)
-        
-        self.tabWidget.addTab(self.tab_all_pos, "")
-        
+
+    def top_right_widget(self, LazyTrader):  
+        """Widget layout for the top right tab"""
         self.widget_top_right = QtWidgets.QWidget(self.centralwidget)
         self.widget_top_right.setGeometry(QtCore.QRect(530, 0, 1001, 671))
         self.widget_top_right.setObjectName("widget_top_right")
@@ -459,7 +453,9 @@ class Ui_LazyTrader(QtWidgets.QMainWindow):
         self.tabWidget_2.setTabPosition(QtWidgets.QTabWidget.North)
         self.tabWidget_2.setTabShape(QtWidgets.QTabWidget.Rounded)
         self.tabWidget_2.setObjectName("tabWidget_2")
-        
+
+    def price_graph_page(self, LazyTrader):
+        """Top right contains the graph showing price action for stocks"""
         self.tab_price_graph = QtWidgets.QWidget()
         self.tab_price_graph.setObjectName("tab_price_graph")
         
@@ -554,7 +550,9 @@ class Ui_LazyTrader(QtWidgets.QMainWindow):
         self.frame_8.setObjectName("frame_8")
         
         self.tabWidget_2.addTab(self.tab_price_graph, "")
-        
+
+    def portfolio_page(self, LazyTrader):
+        """Portfolio page that contains a run down of portfolio activity"""
         self.tab_portfolio_graph = QtWidgets.QWidget()
         self.tab_portfolio_graph.setObjectName("tab_portfolio_graph")
         
@@ -747,6 +745,8 @@ class Ui_LazyTrader(QtWidgets.QMainWindow):
 
         self.tabWidget_2.addTab(self.tab_portfolio_graph, "")
 
+    def notes_page(self, LazyTrader):
+        """Top right tab that contains the notes for future price action"""
         self.tab_notes = QtWidgets.QWidget()
         self.tab_notes.setObjectName("tab_notes")
 
@@ -811,102 +811,124 @@ class Ui_LazyTrader(QtWidgets.QMainWindow):
         
         self.horizontalLayout_2.addWidget(self.btn_save_notes)
         self.tabWidget_2.addTab(self.tab_notes, "")
+
+    def backtest_page(self, LazyTrader):
+        """Page used to show performance of trading systems"""
         self.tab_backtest = QtWidgets.QWidget()
         self.tab_backtest.setObjectName("tab_backtest")
         self.tabWidget_2.addTab(self.tab_backtest, "")
         self.horizontalLayoutWidget_3 = QtWidgets.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_3.setGeometry(QtCore.QRect(0, 910, 1531, 31))
         self.horizontalLayoutWidget_3.setObjectName("horizontalLayoutWidget_3")
-        self.bottom_bar_lay = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_3)
-        self.bottom_bar_lay.setContentsMargins(0, 0, 0, 0)
-        self.bottom_bar_lay.setObjectName("bottom_bar_lay")
-        spacerItem8 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.bottom_bar_lay.addItem(spacerItem8)
 
-        self.label_action_required = QtWidgets.QLabel(self.horizontalLayoutWidget_3)
-
+    def bottom_bar(self, LazyTrader):
+        """Bottom bar that has date etc"""
         font = QtGui.QFont()
         font.setBold(True)
         font.setWeight(75)
+
+        # Define layout
+        self.bottom_bar_lay = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_3)
+        self.bottom_bar_lay.setContentsMargins(0, 0, 0, 0)
+        self.bottom_bar_lay.setObjectName("bottom_bar_lay")
+        self.label_action_required = QtWidgets.QLabel(self.horizontalLayoutWidget_3)
         self.label_action_required.setFont(font)
         self.label_action_required.setObjectName("label_action_required")
-        
         self.bottom_bar_lay.addWidget(self.label_action_required)
-        
-        self.lcd_action_required = QtWidgets.QLCDNumber(self.horizontalLayoutWidget_3)
-        self.lcd_action_required.setObjectName("lcd_action_required")
-        
-        self.bottom_bar_lay.addWidget(self.lcd_action_required)
-        
-        spacerItem9 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.bottom_bar_lay.addItem(spacerItem9)
-        spacerItem10 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        
-        self.bottom_bar_lay.addItem(spacerItem10)
-        
-        self.progressBar = QtWidgets.QProgressBar(self.horizontalLayoutWidget_3)
-        self.progressBar.setProperty("value", 100)
-        self.progressBar.setObjectName("progressBar")
-        
-        self.bottom_bar_lay.addWidget(self.progressBar)
-        
-        spacerItem11 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        
-        self.bottom_bar_lay.addItem(spacerItem11)
-        
-        spacerItem12 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        
-        self.bottom_bar_lay.addItem(spacerItem12)
-
-        self.label_last_updated = QtWidgets.QLabel(self.horizontalLayoutWidget_3)
-        self.label_last_updated.setObjectName("label_last_updated")
-
-        self.bottom_bar_lay.addWidget(self.label_last_updated)
-        spacerItem13 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.bottom_bar_lay.addItem(spacerItem13)
-        spacerItem14 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.bottom_bar_lay.addItem(spacerItem14)
-
-        self.label_update_time = QtWidgets.QLabel(self.horizontalLayoutWidget_3)
-        self.label_update_time.setObjectName("label_update_time")
-
-        self.bottom_bar_lay.addWidget(self.label_update_time)
-        spacerItem15 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.bottom_bar_lay.addItem(spacerItem15)
-        spacerItem16 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.bottom_bar_lay.addItem(spacerItem16)
-        self.btn_update_df = QtWidgets.QPushButton(self.horizontalLayoutWidget_3)
-        self.btn_update_df.setObjectName("btn_update_df")
-        self.bottom_bar_lay.addWidget(self.btn_update_df)
-        spacerItem17 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.bottom_bar_lay.addItem(spacerItem17)
         self.Widget_bot_right = QtWidgets.QTabWidget(self.centralwidget)
         self.Widget_bot_right.setGeometry(QtCore.QRect(530, 650, 1001, 241))
         self.Widget_bot_right.setObjectName("Widget_bot_right")
+
+        # LCD
+        self.lcd_action_required = QtWidgets.QLCDNumber(self.horizontalLayoutWidget_3)
+        self.lcd_action_required.setObjectName("lcd_action_required")
+        self.bottom_bar_lay.addWidget(self.lcd_action_required)
+        
+        # Create spacers 
+        spacerItem8 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem9 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem10 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem11 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem12 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem13 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem14 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem15 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem16 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem17 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        
+        # Add spacers
+        self.bottom_bar_lay.addItem(spacerItem8)
+        self.bottom_bar_lay.addItem(spacerItem9)
+        self.bottom_bar_lay.addItem(spacerItem10)
+        self.bottom_bar_lay.addItem(spacerItem11)
+        self.bottom_bar_lay.addItem(spacerItem12)
+        self.bottom_bar_lay.addItem(spacerItem13)
+        self.bottom_bar_lay.addItem(spacerItem14)
+        self.bottom_bar_lay.addItem(spacerItem15)
+        self.bottom_bar_lay.addItem(spacerItem16)
+        self.bottom_bar_lay.addItem(spacerItem17)
+        
+        
+        # Update label
+        self.label_last_updated = QtWidgets.QLabel(self.horizontalLayoutWidget_3)
+        self.label_last_updated.setObjectName("label_last_updated")
+        self.bottom_bar_lay.addWidget(self.label_last_updated)
+
+        # Last updated time label
+        self.label_update_time = QtWidgets.QLabel(self.horizontalLayoutWidget_3)
+        self.label_update_time.setObjectName("label_update_time")
+        self.bottom_bar_lay.addWidget(self.label_update_time)
+
+        # Progress bar
+        self.progressBar = QtWidgets.QProgressBar(self.horizontalLayoutWidget_3)
+        self.progressBar.setProperty("value", 100)
+        self.progressBar.setObjectName("progressBar")
+        self.bottom_bar_lay.addWidget(self.progressBar)
+
+        # Update data-frame button
+        self.btn_update_df = QtWidgets.QPushButton(self.horizontalLayoutWidget_3)
+        self.btn_update_df.setObjectName("btn_update_df")
+        self.bottom_bar_lay.addWidget(self.btn_update_df)
+        #self.btn_update_df.clicked.connect(partial(self.progress_bar, LazyTrader))
+        self.btn_update_df.clicked.connect(partial(self.progress_bar, LazyTrader))
+
+    def console_page(self, LazyTrader):
+        """Bottom tab that contains logging information"""
         self.tab_console = QtWidgets.QWidget()
         self.tab_console.setObjectName("tab_console")
+
         self.txt_browswer_logs = QtWidgets.QTextBrowser(self.tab_console)
         self.txt_browswer_logs.setGeometry(QtCore.QRect(10, 10, 961, 151))
         self.txt_browswer_logs.setObjectName("txt_browswer_logs")
+        # self.txt_browswer_logs.append("word")
+        
         self.Widget_Console = QtWidgets.QWidget(self.tab_console)
         self.Widget_Console.setGeometry(QtCore.QRect(10, 170, 961, 31))
         self.Widget_Console.setObjectName("Widget_Console")
+        
         self.horizontalLayoutWidget_8 = QtWidgets.QWidget(self.Widget_Console)
         self.horizontalLayoutWidget_8.setGeometry(QtCore.QRect(0, 0, 961, 27))
         self.horizontalLayoutWidget_8.setObjectName("horizontalLayoutWidget_8")
         self.horizontalLayout_8 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_8)
         self.horizontalLayout_8.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_8.setObjectName("horizontalLayout_8")
+        
         self.btn_copy_logs = QtWidgets.QPushButton(self.horizontalLayoutWidget_8)
         self.btn_copy_logs.setObjectName("btn_copy_logs")
         self.horizontalLayout_8.addWidget(self.btn_copy_logs)
+        
         self.btn_print_acc_sum = QtWidgets.QPushButton(self.horizontalLayoutWidget_8)
         self.btn_print_acc_sum.setObjectName("btn_print_acc_sum")
         self.horizontalLayout_8.addWidget(self.btn_print_acc_sum)
+        
         self.btn_save_logs = QtWidgets.QPushButton(self.horizontalLayoutWidget_8)
         self.btn_save_logs.setObjectName("btn_save_logs")
         self.horizontalLayout_8.addWidget(self.btn_save_logs)
+        
         self.Widget_bot_right.addTab(self.tab_console, "")
+
+    def manual_trade_page(self, LazyTrader):
+        """Bottom right tab allowing you to manually add trades"""
         self.tab_man_trade = QtWidgets.QWidget()
         self.tab_man_trade.setObjectName("tab_man_trade")
         self.frame_man = QtWidgets.QFrame(self.tab_man_trade)
@@ -969,6 +991,9 @@ class Ui_LazyTrader(QtWidgets.QMainWindow):
         self.btn_submit_man.setObjectName("btn_submit_man")
         self.gridLayout_14.addWidget(self.btn_submit_man, 6, 2, 1, 1)
         self.Widget_bot_right.addTab(self.tab_man_trade, "")
+
+    def auto_trade_page(self, LazyTrader):
+        """Bottom right tab used to show auto trade action"""
         self.tab_autotrade_action = QtWidgets.QWidget()
         self.tab_autotrade_action.setObjectName("tab_autotrade_action")
         self.textBrowser_autotrade_actions = QtWidgets.QTextBrowser(self.tab_autotrade_action)
@@ -981,12 +1006,18 @@ class Ui_LazyTrader(QtWidgets.QMainWindow):
         self.textBrowser_autotrade_log.setGeometry(QtCore.QRect(10, 10, 981, 201))
         self.textBrowser_autotrade_log.setObjectName("textBrowser_autotrade_log")
         self.Widget_bot_right.addTab(self.tab_autotrade_log, "")
+
+    def http_codes_page(self, LazyTrader):
+        """Bottom right tab showing auto trade HTTP logs"""
         self.tab_http_codes = QtWidgets.QWidget()
         self.tab_http_codes.setObjectName("tab_http_codes")
         self.textBrowser_http_codes = QtWidgets.QTextBrowser(self.tab_http_codes)
         self.textBrowser_http_codes.setGeometry(QtCore.QRect(10, 10, 981, 201))
         self.textBrowser_http_codes.setObjectName("textBrowser_http_codes")
         self.Widget_bot_right.addTab(self.tab_http_codes, "")
+
+    def shortcut_page(self, LazyTrader):
+        """Bottom right tab showing all avaliable shortcuts"""
         self.tab_shortcuts = QtWidgets.QWidget()
         self.tab_shortcuts.setObjectName("tab_shortcuts")
         self.textBrowser_shortcuts = QtWidgets.QTextBrowser(self.tab_shortcuts)
@@ -994,17 +1025,11 @@ class Ui_LazyTrader(QtWidgets.QMainWindow):
         self.textBrowser_shortcuts.setObjectName("textBrowser_shortcuts")
         self.Widget_bot_right.addTab(self.tab_shortcuts, "")
         LazyTrader.setCentralWidget(self.centralwidget)
+        self.menu_setup(LazyTrader)
+        self.inti_tab(LazyTrader)
 
-
-
-
-
-
-
-
-
-        # Menu ---------
-
+    def menu_setup(self, LazyTrader):
+        """menu top bar containing trading indicators"""
         self.menubar = QtWidgets.QMenuBar(LazyTrader)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1574, 20))
         self.menubar.setObjectName("menubar")
@@ -1298,12 +1323,75 @@ class Ui_LazyTrader(QtWidgets.QMainWindow):
         self.menubar.addAction(self.menuOther.menuAction())
         self.menubar.addAction(self.menuAutoTrade.menuAction())
 
+    def all_trade_page(self, LazyTrader): 
+        """Top left tab contains all trades that lazy trader has data for"""
+        self.tab_all_pos = QtWidgets.QWidget()
+        self.tab_all_pos.setObjectName("tab_all_pos")
+        
+        # self.tableWidget_7 = QtWidgets.QTableWidget(self.tab_all_pos)
+        # self.tableWidget_7.setGeometry(QtCore.QRect(10, 10, 471, 751))
+        # self.tableWidget_7.setObjectName("tableWidget_7")
+        # self.tableWidget_7.setColumnCount(0)
+        # self.tableWidget_7.setRowCount(0)
+        
+        self.frame_3 = QtWidgets.QFrame(self.tab_all_pos)
+        self.frame_3.setGeometry(QtCore.QRect(10, 770, 471, 81))
+        self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_3.setObjectName("frame_3")
+        self.gridLayoutWidget_7 = QtWidgets.QWidget(self.frame_3)
+        self.gridLayoutWidget_7.setGeometry(QtCore.QRect(10, 10, 451, 61))
+        self.gridLayoutWidget_7.setObjectName("gridLayoutWidget_7")
+        self.gridLayout_2 = QtWidgets.QGridLayout(self.gridLayoutWidget_7)
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_2.setObjectName("gridLayout_2")
+
+
+        self.frame_all_table = QtWidgets.QFrame(self.tab_all_pos)
+        self.frame_all_table.setGeometry(QtCore.QRect(100, 100, 100, 100))
+        self.frame_all_table.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_all_table.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_all_table.setObjectName("frame_all_table")
+        self.grid_all_tbl_lout = QtWidgets.QWidget(self.frame_all_table)
+        self.grid_all_tbl_lout.setGeometry(QtCore.QRect(100, 100, 100, 100))
+        self.grid_all_tbl_lout.setObjectName("grid_all_tbl_lout")
+        self.gridLayout_all_tbl = QtWidgets.QGridLayout(self.grid_all_tbl_lout)
+        self.gridLayout_all_tbl.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_all_tbl.setObjectName("gridLayout_all_tbl")
+        
+
+
+        
+        self.btn_search_name_all = QtWidgets.QPushButton(self.gridLayoutWidget_7)
+        self.btn_search_name_all.setObjectName("btn_search_name_all")
+        
+        
+        self.txt_search_all = QtWidgets.QLineEdit(self.gridLayoutWidget_7)
+        self.txt_search_all.setObjectName("txt_search_all")
+        
+        self.combo_search_all = QtWidgets.QComboBox(self.gridLayoutWidget_7)
+        self.combo_search_all.setObjectName("combo_search_all")
+        
+        
+        self.btn_search_type_all = QtWidgets.QPushButton(self.gridLayoutWidget_7)
+        self.btn_search_type_all.setObjectName("btn_search_type_all")
+
+
+        self.gridLayout_2.addWidget(self.txt_search_all, 1, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.combo_search_all, 2, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.btn_search_name_all, 1, 1, 1, 1)
+        self.gridLayout_2.addWidget(self.btn_search_type_all, 2, 1, 1, 1)
+        
+        self.tabWidget.addTab(self.tab_all_pos, "")
+
+    def inti_tab(self, LazyTrader):
+        """Selects the default tab at runtime"""
         # select the default tabs on the GUI 
         self.retranslateUi(LazyTrader)
         self.tabWidget.setCurrentIndex(4)
         self.tabWidget_4.setCurrentIndex(0)
         self.tabWidget_2.setCurrentIndex(0)
-        self.Widget_bot_right.setCurrentIndex(1)
+        self.Widget_bot_right.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(LazyTrader)
 
         #################################################
@@ -1341,16 +1429,8 @@ class Ui_LazyTrader(QtWidgets.QMainWindow):
         # plt.plot(data['Low'])
         # plt.title('Bitcoin Low price')
 
-    def _update_canvas(self):
-        self._dynamic_ax.clear()
-        t = np.linspace(0, 10, 101)
-        # Shift the sinusoid as a function of time.
-        self._dynamic_ax.plot(t, np.sin(t + time.time()))
-        self._dynamic_ax.figure.canvas.draw()
-
-
-
     def retranslateUi(self, LazyTrader):
+        """Sets the text for buttons and labels etc"""
         _translate = QtCore.QCoreApplication.translate
         LazyTrader.setWindowTitle(_translate("LazyTrader", "LazyTrader"))
         self.btn_update_stop_action.setText(_translate("LazyTrader", "UPDATE STOP LOSS"))
@@ -1553,13 +1633,26 @@ class Ui_LazyTrader(QtWidgets.QMainWindow):
         self.actionOn.setText(_translate("LazyTrader", "ON"))
         self.actionOFF.setText(_translate("LazyTrader", "OFF"))
 
+    def load_classes(self, LazyTrader):
+        """
+        Loads relevent classes for init
+        """
+        self.Console = ConsoleLog(self.txt_browswer_logs)
+        self.FetchData = FetchData(self)
+        self.Console.append("Initilization Completed")
+        #self.Console.banner()
+        #Data = DownloadData()
 
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    app.setStyleSheet(qdarkgraystyle.load_stylesheet())
-    LazyTrader = QtWidgets.QMainWindow()
-    ui = Ui_LazyTrader()
-    ui.setupUi(LazyTrader)
-    LazyTrader.show()
-    sys.exit(app.exec_())
+    def progress_bar(self, LazyTrader):
+        self.Console.append("Starting- Updating data-frames", "success")
+        self.completed = 0
+        while self.completed < 100:
+            self.completed += 0.0001
+            self.progressBar.setValue(self.completed)
+
+    def load_all_table(self, LazyTrader):
+        self.all_table = self.All = All(self.FetchData.dict_list)
+        self.gridLayout_all_tbl.addWidget(self.all_table.tableWidget, 1, 0 , 1, 1)
+        self.gridLayout_2.addWidget(self.all_table.tableWidget, 1, 0, 1, 1)
+
+
